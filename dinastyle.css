@@ -1,0 +1,321 @@
+#youtubecontainerdiv{
+	/* margin-top: -3%; */
+	height: 40%;
+	/* width: 116%; */
+	
+	/* margin-left:-8%; */
+	background-color: black;
+}
+ul{list-style-type:disc;}
+.theorem{
+	background-color: lightblue;
+	border: 1px solid darkblue;
+	padding: 2%;
+	margin:1%;
+}
+.divexample{
+	position: relative;
+	background-color: #f7f7f7;
+	border: 1px solid red;
+	padding: 2%;
+	margin:1%;	
+} 
+#youtubecontainerdivenlarged{
+	position: absolute;
+	width: 100%;	
+}
+#topicdiv{
+	font-size:34px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; 
+}
+#youtubeframe{
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	width:100% ;
+}
+#MiniContent{
+	padding: 3%;
+    color: #373A3C;
+    font-size: 15px;
+    font-family:'OpenSans',Arial,sans-serif;
+}
+#topicdiv{
+	padding:0px 0px 0px 10px;
+	border-bottom: 1px solid gray;
+	font-size:34px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif;
+	margin-top:15px;
+}
+.topicdiv1{
+	padding:0px 0px 0px 10px;
+	border-bottom: 1px solid gray;
+	font-size:28px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif;
+	margin-top:15px;
+
+}
+#MainContent {
+	font-family: 'Roboto', sans-serif;
+	padding:2% 5% 4% 5%;
+	font-size: 17px;
+	position: absolute;
+	left:245px;
+	height:100%;
+	overflow:scroll;
+	right:0%;
+}
+
+#MainContentEnlarged{
+	position:absolute;
+	width:100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	padding:2%;
+	overflow:scroll;
+	height:100%;
+
+}
+@media screen and (min-width: 900px){
+
+#LeftDiv{
+	width:245px;
+	position:absolute;
+	background-color:;
+	height:100%;
+	bottom:0%;
+	overflow:scroll;
+}
+.YouTubeSolution{height:70%;}
+}
+.LeftMenuListItemText{text-align:center;}
+@media screen and (max-width: 900px){
+	#LeftMiniContent{font-size:15px;}
+	#LeftDiv{
+	width:245px;
+	position:absolute;
+	background-color:white;
+	height:100%;
+	bottom:0%;
+	overflow:scroll;
+}
+
+#MainContent{font-size:;}
+}
+@media screen and (max-width:800px){
+	ul{position: relative;width:90%;left:5%}
+	#LeftMiniContent{font-size:20px;}
+	.LeftMenuListItemText{font-size:15px;text-align:center;}
+#MainContent{font-size: ;}
+}
+@media screen and (min-width: 700px){
+	#Main{height:90%;}
+	#TopHeader{height:10%;}
+}
+@media screen and (max-width: 700px) {
+	#youtubecontainerdiv{	width: 104%;
+		height: 60%;
+		margin-left:-2%;}
+	#LeftMiniContent{font-size:25px;}
+	.LeftMenuListItemText{font-size:25px;text-align:center;}
+  #MainContent {
+  position:static;
+  width: 100%;
+  margin: 1px 1px 1px; padding:2%; font-size: ;
+  order:1;
+  }
+  #MainContentEnlarged{font-size: 12px;}
+ #Main{height:92%;}
+ #TopHeader{height:8%;}
+  #BigContent{font-size: 25px;}
+  #LeftDiv{width:245px;
+  position:absolute;
+	background-color:white;
+	display:hidden;
+	bottom:0%;
+	overflow:scroll;
+	order:2;}
+} 
+#TopHeader{
+	position:relative;
+	background-color:;
+	/* height:10%; */
+	border-bottom:1px solid gray;
+}
+#Main{
+	position:relative;
+	
+	bottom:0%;
+	
+}
+
+#Footer{
+	border-top:1px solid gray;
+	position:relative;
+	text-align:center;	
+}
+#LeftDiv{
+	z-index:1;
+}
+#GreySpace{
+	z-index: 1;
+	position: absolute;
+	z-index:1;
+	height:100%;
+	left: 245px;
+	display:none;
+	opacity:0.5;
+	right: 0px;
+	background-color: #373A3C;
+}
+
+#HeaderLogo{display:relative;
+	width:40%;
+}
+
+#HeaderLogoImage{
+	border:1px solid black;
+	position:absolute;
+	height:100%;
+
+}
+
+#HeaderLogoText{
+	border:1px solid black;
+	align-items:center;
+	position:relative;
+	height:100%;
+	text-align: center;
+	font-family:'Roboto';
+	margin-left:1%;
+}
+#LeftMiniContent{
+	text-align:center;
+	margin:5%;
+	position:relative;
+	
+	font-family:'Roboto';
+}
+.BlackHR{
+	border:1px solid black;
+}
+#LeftMenu{
+	position:relative;
+	
+	
+}
+
+
+#TopHeaderSVG{
+	position:absolute;
+	justify-content:center;
+	top:5%;
+	height:90%;
+	width:40%;
+	left:30%;
+}
+#TopHeaderSVG:hover{
+	border:1px;
+}
+#LeftMenuButton {
+  position:absolute;
+  height:90%;
+  top:5%;
+  left:5px;
+
+  
+}
+#DownloadButton{
+	position:absolute;
+	height:90%;
+	top:5%;
+	right:5px;	
+}
+.QuestionText{background-color:gray; padding:2%}
+.SolutionText{padding:2%;}
+#LeftMenuButton:hover{
+	  border:1px solid gray;
+  border-radius:2px;
+  cursor:pointer;
+}
+#LeftMenuButton{
+	border:1px solid black;
+	border-radius:2px;
+}
+
+#MainContentEnlarged,#LeftDiv,#MainContent,body{
+	overflow-x:hidden;
+	
+}
+
+body::-webkit-scrollbar{
+	width:0;
+}
+.overflowdiv{overflow-x:auto;}
+.overflowdiv::-webkit-scrollbar{width: 0.02px;}
+#LeftDiv::-webkit-scrollbar,#MainContent::-webkit-scrollbar,#MainContentEnlarged::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+.overflowdiv::-webkit-scrollbar-track,#LeftDiv::-webkit-scrollbar-track,#MainContent::-webkit-scrollbar-track,#MainContentEnlarged::-webkit-scrollbar-track,body::-webkit-scrollbar-track {
+  box-shadow: ;
+}
+ 
+.overflowdiv::-webkit-scrollbar-thumb,#LeftDiv::-webkit-scrollbar-thumb,#MainContent::-webkit-scrollbar-thumb,#MainContentEnlarged::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.LessonHead{
+    cursor: pointer;
+    width: 240px;
+    /* height: 32px; */
+    padding: 6px 24px;
+    color:#000000DE;
+    font-size: 14px;
+	font-family:OpenSans,Arial,sans-serif;
+	border-bottom: 0.5px solid grey;
+}
+.CurrentLessonItem{
+    width: 240px;
+    padding: 8px 24px 8px 18px;
+	position: relative;
+	background-color: #FFFF66;
+}
+.LessonItem{
+    width: 240px;
+    padding: 8px 24px 8px 18px;
+    position: relative;
+}
+.LessonItem:hover{
+    background: #FFFF66;
+}
+.LessonItemIconContainer{
+    position: relative;
+    width:32px;
+
+}
+.LessonItemIcon{
+    position: absolute;
+    width:20px;
+    height:20px;
+}
+.LessonItemTextContainer{
+    position: relative;
+    left:32px;
+    width:160px;
+    background-color:;
+}
+.LessonItemText{
+    color: #373A3C;
+    font-size: 12px;
+    font-family:'OpenSans',Arial,sans-serif;
+}
+.LessonItemSubText{
+    margin:2px 0px 0px;
+    color: #6B6B6B;
+    font-size: 12px;
+    font-family:'OpenSans',Arial,sans-serif;
+}
+.LessonProgress{
+    width:50%;
+    height:5px;
+    background-color: red;
+    position: relative;
+}
