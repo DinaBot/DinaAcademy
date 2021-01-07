@@ -169,10 +169,13 @@ ul{list-style-type:disc;}
 }
 @media screen and (max-width:700px){
 	#GreySpace{display:block;}
+	
+#topicdivm{
+	font-size:20px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; border-bottom: 0.5px solid lightgray; margin-bottom: 10px;
+}
 }
 #topicdivm{
-	
-	font-size:20px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; border-bottom: 0.5px solid lightgray; margin-bottom: 10px;
+	font-size:30px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; border-bottom: 0.5px solid lightgray; margin-bottom: 10px;
 }
 #HeaderLogo{display:relative;
 	width:40%;
@@ -267,7 +270,7 @@ body::-webkit-scrollbar{
 }
  
 .overflowdiv::-webkit-scrollbar-thumb,#LeftDiv::-webkit-scrollbar-thumb,#MainContent::-webkit-scrollbar-thumb,#MainContentEnlarged::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color:red;
 }
 
 .LessonHead{
