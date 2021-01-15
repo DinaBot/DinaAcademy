@@ -58,7 +58,8 @@ ul{list-style-type:disc;}
 	font-size: 17px;
 	position: absolute;
 	left:245px;
-	height:100%;
+	top: 0px;
+	height: 100%;
 	overflow:scroll;
 	right:0%;
 }
@@ -97,7 +98,6 @@ ul{list-style-type:disc;}
 	overflow:scroll;
 }
 
-#MainContent{font-size:;}
 }
 @media screen and (max-width:800px){
 	ul{position: relative;width:90%;left:5%}
@@ -106,8 +106,8 @@ ul{list-style-type:disc;}
 #MainContent{font-size: ;}
 }
 @media screen and (min-width: 700px){
-	#Main{height:90%;}
-	#TopHeader{height:10%;}
+	/* #Main{height:calc(100%-50px);}
+	#TopHeader{height:50px;} */
 }
 @media screen and (max-width: 700px) {
 	#youtubecontainerdiv{	width: 104%;
@@ -122,8 +122,6 @@ ul{list-style-type:disc;}
   order:1;
   }
   #MainContentEnlarged{font-size: 12px;}
- #Main{height:92%;}
- #TopHeader{height:8%;}
   #BigContent{font-size: 25px;}
   #LeftDiv{width:245px;
   position:absolute;
@@ -136,13 +134,15 @@ ul{list-style-type:disc;}
 #TopHeader{
 	position:relative;
 	background-color:;
-	/* height:10%; */
+	height:50px;
 	border-bottom:1px solid gray;
 }
 #Main{
-	position:relative;
-	
-	bottom:0%;
+	position: relative;
+	height: calc(100vh - 50px);
+	left: 0px;
+	width: 100%;
+
 	
 }
 
