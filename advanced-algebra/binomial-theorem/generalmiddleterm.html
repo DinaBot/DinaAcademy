@@ -1,0 +1,302 @@
+<html>
+    <head> 
+    <script type="text/javascript" id="MathJax-script" async
+     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+   </script>
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <title>Read: General and Middle Term in Binomial Expansion</title>
+     <link rel = "icon" href = "https://dinalearn.dinaacademy.org/LOGO.png" type = "image/x-icon"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="Binomial Theorem, Binomial Theorem Proof, Binomial Theorem Practice, Dina, Dina Academy, Mathematics">
+     <meta name="description" content="Learn some interesting properties of Binomial Expansions - The General and Middle Term. You Can Learn Anything! DinaAcademy">
+     <link rel="stylesheet" href="https://www.dinaacademy.org/dinastyle.css">
+     <link rel="stylesheet" media="print" href="https://www.dinaacademy.org/dinaprintstyle.css">
+   <script src="dinajs.js"></script>
+   </head>
+   <body onload="BodyLoadFunction()" onresize="BodyLoadFunction()">
+   
+       <div id="TopHeader">
+        <svg id="LeftMenuButton" onclick="LeftMenuButtonClick()" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="50" height="50"><defs><path d="M43.26 9.06C44.22 9.06 45 9.84 45 10.8C45 11.85 45 13.24 45 14.29C45 15.25 44.22 16.03 43.26 16.03C35.61 16.03 14.39 16.03 6.74 16.03C5.78 16.03 5 15.25 5 14.29C5 13.24 5 11.85 5 10.8C5 9.84 5.78 9.06 6.74 9.06C14.39 9.06 35.61 9.06 43.26 9.06Z" id="g3LBB5xk7t"></path><path d="M43.26 21.22C44.22 21.22 45 22 45 22.96C45 24 45 25.4 45 26.44C45 27.4 44.22 28.18 43.26 28.18C35.61 28.18 14.39 28.18 6.74 28.18C5.78 28.18 5 27.4 5 26.44C5 25.4 5 24 5 22.96C5 22 5.78 21.22 6.74 21.22C14.39 21.22 35.61 21.22 43.26 21.22Z" id="b1LMQcAyiQ"></path><path d="M43.26 33.97C44.22 33.97 45 34.75 45 35.71C45 36.76 45 38.15 45 39.2C45 40.16 44.22 40.94 43.26 40.94C35.61 40.94 14.39 40.94 6.74 40.94C5.78 40.94 5 40.16 5 39.2C5 38.15 5 36.76 5 35.71C5 34.75 5.78 33.97 6.74 33.97C14.39 33.97 35.61 33.97 43.26 33.97Z" id="b1doCuN9CK"></path></defs><g><g><g><use xlink:href="#g3LBB5xk7t" opacity="1" fill="#000000" fill-opacity="0.67"></use></g><g><use xlink:href="#b1LMQcAyiQ" opacity="1" fill="#000000" fill-opacity="0.67"></use></g><g><use xlink:href="#b1doCuN9CK" opacity="1" fill="#000000" fill-opacity="0.67"></use></g></g></g></svg>
+           <a href="https://www.dinaacademy.org"><img id="TopHeaderSVG" src="https://dinalearn.dinaacademy.org/DinaAcademySVG.svg"></a>
+           <div id="RightButtons"><a href="https://drive.google.com/u/1/uc?id=15RAI3BcSfwvvP2OkKG12F56mmM5x6bbM&export=download"><img id="DownloadButton" src="https://dinalearn.dinaacademy.org/downloadsvg.svg"></a></div>
+       </div>
+       <script></script>
+       <div id="Main">
+       <div id="GreySpace" onclick="LeftMenuButtonClick()">Dina Academy</div>
+       <div id="LeftDiv"> 
+        <b><p id="MiniContent" style=""><a href="">Advanced Algebra</a>  >  <a href="">Binomial Theorem</a>  >  <a href="">General & Middle Term</a></p></b> 
+        <hr id="BlackHR">
+           <div id="LeftMenu">
+            <div class="LessonHead" onclick="ToggleMenuShow(1)">
+              <strong>Binomial Theorem for Positive Index</strong>
+          </div>
+          <div id="Menu1">
+          <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/introduction.html"><div>
+          <div class="LessonItem">
+              <div class="LessonItemIconContainer">
+                  <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+              </div>
+              <div class="LessonItemTextContainer">
+                  <div class="LessonItemText">
+                  <strong>Read: </strong>Expanding Products of Binomials
+                  </div>
+                  <div class="LessonItemSubText">
+                  15 minutes
+                  </div>
+              </div>
+          </div> 
+          </div></a>
+          <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/video-proofbinomialtheorem.html"><div>
+            <div class="LessonItem">
+                <div class="LessonItemIconContainer">
+                    <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
+                </div>
+                <div class="LessonItemTextContainer">
+                    <div class="LessonItemText">
+                    <strong>Video: </strong>Proving the Binomial Theorem Using Mathematical Induction
+                    </div>
+                    <div class="LessonItemSubText">
+                    15 minutes
+                    </div>
+                </div>
+            </div> 
+          </div></a>
+          <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/proofbinomialtheorem.html"><div>
+              <div class="LessonItem">
+                  <div class="LessonItemIconContainer">
+                      <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+                  </div>
+                  <div class="LessonItemTextContainer">
+                      <div class="LessonItemText">
+                      <strong>Read: </strong>Proving the Binomial Theorem Using Mathematical Induction
+                      </div>
+                      <div class="LessonItemSubText">
+                      10 minutes
+                      </div>
+                  </div>
+              </div> 
+            </div></a>
+              <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/practice-binomial1.html"><div>
+                <div class="LessonItem">
+                    <div class="LessonItemIconContainer">
+                        <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/practicesvg.svg"></div>
+                    </div>
+                    <div class="LessonItemTextContainer">
+                        <div class="LessonItemText">
+                        <strong>Practice: </strong>Practice the Binomial Theorem for Positive Indices
+                        </div>
+                        <div class="LessonItemSubText">
+                        25 minutes
+                        </div>
+                    </div>
+                </div> 
+              </div></a>
+          </div>  
+          <div class="LessonHead" onclick="ToggleMenuShow(2)">
+            <strong>Some Observations on the Binomial Theorem</strong>
+        </div>
+        <div id="Menu2">
+        <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/video-generalmiddleterm.html"><div>
+            <div class="LessonItem">
+                <div class="LessonItemIconContainer">
+                    <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
+                </div>
+                <div class="LessonItemTextContainer">
+                    <div class="LessonItemText">
+                    <strong>Video: </strong>General and Middle Term
+                    </div>
+                    <div class="LessonItemSubText">
+                    15 minutes
+                    </div>
+                </div>
+            </div> 
+            </div></a>
+        
+        <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/generalmiddleterm.html"><div>
+        <div class="CurrentLessonItem">
+            <div class="LessonItemIconContainer">
+                <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+            </div>
+            <div class="LessonItemTextContainer">
+                <div class="LessonItemText">
+                <strong>Read: </strong>General and Middle term
+                </div>
+                <div class="LessonItemSubText">
+                10 minutes
+                </div>
+            </div>
+        </div> 
+        </div></a>
+
+        <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/video-greatestterm.html"><div>
+            <div class="LessonItem">
+                <div class="LessonItemIconContainer">
+                    <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
+                </div>
+                <div class="LessonItemTextContainer">
+                    <div class="LessonItemText">
+                    <strong>Video: </strong>Greatest Term
+                    </div>
+                    <div class="LessonItemSubText">
+                    15 minutes
+                    </div>
+                </div>
+            </div> 
+            </div></a>
+        <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/greatestterm.html"><div>
+            <div class="LessonItem">
+                <div class="LessonItemIconContainer">
+                    <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+                </div>
+                <div class="LessonItemTextContainer">
+                    <div class="LessonItemText">
+                    <strong>Read: </strong>The Greatest Term 
+                    </div>
+                    <div class="LessonItemSubText">
+                    15 minutes
+                    </div>
+                </div>
+            </div> 
+          </div></a>
+          <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/practice-binomial2.html"><div>
+              <div class="LessonItem">
+                  <div class="LessonItemIconContainer">
+                      <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/practicesvg.svg"></div>
+                  </div>
+                  <div class="LessonItemTextContainer">
+                      <div class="LessonItemText">
+                      <strong>Practice: </strong>Practice what you've learnt
+                      </div>
+                      <div class="LessonItemSubText">
+                      25 minutes
+                      </div>
+                  </div>
+              </div> 
+            </div></a>
+        </div>
+           </div>
+       </div>
+       <div id="MainContent" onscroll="scrollMain()">
+        <div id="topicdivm">General and Middle Term of Binomial Expansion</div><br>
+        <p>In the expansion of <span class="math inline">\((x+a)^n\)</span>, the <span class="math inline">\((r+1)^{th}\)</span> (convince yourself) term is <span class="math inline">\(\binom{n}{r}x^{n-r}a^r\)</span>. So we can also write <span class="math display">\[(x+a)^n=\sum_{r=0}^{n} \binom{n}{r}x^{n-r}a^r.\]</span></p>
+<p>Sometimes, we are interested to know the middle term of the binomial expansion. Remember that there are <strong><span class="math inline">\((n+1)\)</span></strong> terms in the expansion of <span class="math inline">\((a+b)^n=\sum_{r=0}^{n} \binom{n}{r} a^{n-r}b^r\)</span>.</p>
+<ul>
+<li><p><strong>If <span class="math inline">\(n\)</span> is even,</strong> The number of terms, <span class="math inline">\((n+1)\)</span> is odd and thus the middle term occurs at <span class="math inline">\(\left(\dfrac{(n+1)+1}{2}\right)^{th}\)</span> or at the <span class="math inline">\(\left(\dfrac{n}{2}+1\right)^{th}\)</span> term</p></li>
+<li><p><strong>If <span class="math inline">\(n\)</span> is odd,</strong> The number of terms, <span class="math inline">\((n+1)\)</span> is even and thus there are <strong>2</strong> middle terms occurring at <span class="math inline">\(\left(\dfrac{n+1}{2}\right)^{th}\)</span> and <span class="math inline">\(\left(\dfrac{n+1}{2} + 1\right)^{th}\)</span> or at the <span class="math inline">\(\left(\dfrac{n+1}{2}\right)^{th}\)</span> and <span class="math inline">\(\left(\dfrac{n+3}{2}\right)^{th}\)</span> terms.</p></li>
+</ul><br>
+<div class="divexample">
+    <b><p>If the <span class="math inline">\(4^{th}\)</span> term in the expansion of <span class="math inline">\(\left(px+\frac{1}{x}\right)^n\)</span> is independent of <span class="math inline">\(x\)</span>, find the value of <span class="math inline">\(n\)</span>. Also calculate <span class="math inline">\(p\)</span> if the <span class="math inline">\(4^{th}\)</span> term is <span class="math inline">\(5/2\)</span>.</p></b><br>
+    <p>The <span class="math inline">\(4^{th}\)</span> term is <span class="math inline">\(\binom{n}{3}(px)^3\left(\frac{1}{x}\right)^{n-3}=\binom{n}{3}p^3x^{6-n}\)</span>. If it is independent of <span class="math inline">\(x\)</span>, its power should be zero. So <span class="math inline">\(n=6\)</span>. Also since this <span class="math inline">\(4^{th}\)</span> term is equal to <span class="math inline">\(5/2\)</span>, we have <span class="math inline">\(\binom{6}{3}\cdot p^3=\dfrac{5}{2}\implies p=\left(\dfrac{5}{2\cdot\binom{6}{3}}\right)^{1/3}=\dfrac{1}{2}\)</span></p>
+</div><br>
+<div class="divexample">
+<b><p>Find the middle term in the expansion of <span class="math inline">\((1-2x+x^2)^n\)</span>.</p></b><br>
+<p>We have <span class="math inline">\((1-2x+x^2)^n=((1-x)^2)^n=(1-x)^{2n}\)</span>. <span class="math inline">\(2n\)</span> is an even integer <span class="math inline">\(\implies (\frac{2n}{2}+1)^{th}\)</span> i.e <span class="math inline">\((n+1)^{th}\)</span> term will be the middle term. Now the <span class="math inline">\((n+1)^{th}\)</span> term in <span class="math inline">\((1-x)^{2n}\)</span> = <span class="math inline">\(^{2n}C_{n}(1)^{2n-n}(-x)^n\)</span> = <span class="math inline">\(\dfrac{(2n)!}{n!\cdot n!} (-x)^n\)</span></p>
+</div>      
+    </div>
+   </div>
+   </div>
+   <script>
+     LeftDiv.scrollBy(0,500);
+  </script>
+   <footer class="text-gray-700 body-font" id="Footer">
+     <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+         <img class="h-20 w-20 object-cover" src="https://calculus.dinaacademy.org/DinaCalculus_Logo.svg">
+           <b><span class="ml-3 text-xl" style="font-family:Roboto">Dina Academy</span></b>
+         </a>
+         <br>
+         <b><p class="mt-1 font-big text-gray-900" style="text-align:center;font-family:Roboto">You can learn anything!</p>
+       </b></div>
+       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+           <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LEARN ADVANCED ALGEBRA</h2>
+           <nav class="list-none mb-10">
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">GET THE BOOK</a>
+             </li>
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">Complex Numbers</a>
+             </li>
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">Matrices & Determinants</a>
+             </li>
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">Linear Algebra</a>
+             </li>
+           </nav>
+         </div>
+         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+           <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DINA ACADEMY</h2>
+           <nav class="list-none mb-10">
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">DinaAcademy Home</a>
+             </li>
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">Advanced Algebra Homepage</a>
+             </li>
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">DinaAcademy Community</a>
+             </li>
+             <li>
+               <a href=" " class="text-gray-600 hover:text-gray-800">DinaCalculus Home</a>
+             </li>
+           </nav>
+         </div>
+         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+           <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DINATECH</h2>
+           <nav class="list-none mb-10">
+             <li>
+               <a href="mailto:tech.dina@gmail.com"class="text-gray-600 hover:text-gray-800">Email DinaBot</a>
+             </li>
+             <li> 
+               <a href=" " class="text-gray-600 hover:text-gray-800">Get Android App</a>
+             </li>
+             <li>
+               <a class="text-gray-600 hover:text-gray-800">Volunteer @Dina</a>
+             </li>
+             <li>
+               <a class="text-gray-600 hover:text-gray-800">Why Dina?</a>
+             </li>
+           </nav>
+         </div>
+   
+       </div>
+     </div>
+     <div class="bg-gray-200">
+       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+         <p class="text-gray-500 text-sm text-center sm:text-left"> @ 2020 Dina Academy -
+           <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">Creative Commons - CC BY 4.0</a>
+         </p>
+         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+           <a class="text-gray-500" href="https://www.facebook.com/Dina-Academy-105709324649847">
+             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-50 h-5" viewBox="0 0 24 24">
+               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+             </svg>
+           </a>
+           <a class="ml-3 text-gray-500">
+             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+               <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+             </svg>
+           </a>
+           <a class="ml-3 text-gray-500">
+             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+             </svg>
+           </a>
+           <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/dina-academy">
+             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+               <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+               <circle cx="4" cy="4" r="2" stroke="none"></circle>
+             </svg>
+           </a>
+         </span>
+       </div>
+     </div>
+   </footer>
+   </body>
+   </html>
