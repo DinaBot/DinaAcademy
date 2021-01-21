@@ -1,14 +1,89 @@
-#youtubecontainerdiv{
-	/* margin-top: -3%; */
-	height: 40%;
-	/* width: 116%; */
+.bigdivcontainer{
+	overflow: scroll;
+	margin-top: 2%;
+	padding: 2%;
+	position: relative;
+	width: 95%;
+	left:2.5%;
+	height:500px;
+	border: 1px solid #373A3C;
+	border-radius: 1%;
 	
-	/* margin-left:-8%; */
+}
+.bigdivcontainer:hover{
+	border:2px solid #373A3C;
+}
+#youtubecontainerdivenlarged{
+	position: relative;
+	width: 104%;
+	margin: -2%;
+	height:60%;
 	background-color: black;
+}
+@media screen and (max-width : 910px){
+	#youtubecontainerdiv{
+		height: 300px;
+		width: 115%;
+		margin-top: -3%;
+		margin-left: -7%;
+	}
+	#youtubeframe{
+		width:533px;
+		left:calc(50% - 266.5px);
+		top: 0%;
+	height: 100%;
+	}
+}
+@media screen and (min-width : 910px){
+	#youtubecontainerdiv{
+		height: 360px;
+		width: 116%;
+		margin-top: -3%;
+		margin-left: -8%;
+	}
+	#youtubeframe{
+		width:640px;
+		left:calc(50% - 320px);
+		top: 0%;
+	height: 100%;
+	}
+}
+@media screen and (max-width : 790px){
+	#youtubecontainerdiv{
+		height: 252px;
+		width: 115%;
+		margin-top: -3%;
+		margin-left: -7%;
+	}
+	#youtubeframe{
+		width:448px;
+		left:calc(50% - 224px);
+		top: 0%;
+	height: 100%;
+	}
+}
+@media screen and (max-width : 700px){
+	#youtubecontainerdiv{
+		margin-left: -2%;
+		margin-right: -2%;
+		height: calc((9/16) * 100vw);
+	}
+	#youtubeframe{
+		position: absolute;
+		width: 100vw;
+		height: calc((9/16) * 100vw);
+		left: 0%;
+		right: 0%;
+	}
+}
+#youtubecontainerdiv{
+	position: relative;
+	background-color: black;
+
 }
 ul{list-style-type:disc;}
 .theorem{
-	background-color: lightblue;
+	background-color: rgb(27, 30, 31)226, 235);
 	border: 1px solid darkblue;
 	padding: 2%;
 	margin:1%;
@@ -20,18 +95,13 @@ ul{list-style-type:disc;}
 	padding: 2%;
 	margin:1%;	
 } 
-#youtubecontainerdivenlarged{
-	position: absolute;
-	width: 100%;	
-}
+
 #topicdiv{
 	font-size:34px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; 
 }
 #youtubeframe{
 	position: absolute;
-	top: 0%;
-	height: 100%;
-	width:100% ;
+	
 }
 #MiniContent{
 	padding: 3%;
@@ -106,15 +176,9 @@ ul{list-style-type:disc;}
 #MainContent{font-size: ;}
 }
 @media screen and (min-width: 700px){
-	/* #Main{height:calc(100%-50px);}
-	#TopHeader{height:50px;} */
 }
 @media screen and (max-width: 700px) {
-	#youtubecontainerdiv{	width: 104%;
-		height: 60%;
-		margin-left:-2%;}
 	#LeftMiniContent{font-size:25px;}
-	.LeftMenuListItemText{font-size:25px;text-align:center;}
   #MainContent {
   position:static;
   width: 100%;
@@ -130,6 +194,16 @@ ul{list-style-type:disc;}
 	bottom:0%;
 	overflow:scroll;
 	order:2;}
+	#TopHeader{
+		position:static;
+	}
+	#Main{
+		position: static;
+		height: 1000px;
+	}
+	#Footer{
+		position: static;
+	}
 } 
 #TopHeader{
 	position:relative;
@@ -161,9 +235,9 @@ ul{list-style-type:disc;}
 	display: none;
 	height:100%;
 	left: 245px;
-	opacity:0.5;
+	opacity:0.1;
 	right: 0px;
-	background-image: linear-gradient(to right, black 0%, gray 5%, lightgray 100%);
+	background-image: linear-gradient(to right, black 0%, gray 5%, lightgray 10%);
 	text-align: center;
 	font-size: 0.1px;
 }
@@ -261,6 +335,7 @@ body::-webkit-scrollbar{
 }
 .overflowdiv{overflow-x:auto;}
 .overflowdiv::-webkit-scrollbar{width: 0.02px;}
+.bigdivcontainer::-webkit-scrollbar{width: 0;}
 #LeftDiv::-webkit-scrollbar,#MainContent::-webkit-scrollbar,#MainContentEnlarged::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -272,7 +347,9 @@ body::-webkit-scrollbar{
 .overflowdiv::-webkit-scrollbar-thumb,#LeftDiv::-webkit-scrollbar-thumb,#MainContent::-webkit-scrollbar-thumb,#MainContentEnlarged::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb {
   background-color:red;
 }
+@media screen and (max-width: 1110px){
 
+}
 .LessonHead{
     cursor: pointer;
     width: 240px;
