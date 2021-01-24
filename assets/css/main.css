@@ -2271,13 +2271,6 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
-
-    body::-webkit-scrollbar{
-      width:0;
-    }
-    #sidebar::-webkit-scrollbar{
-      width:0;
-    }
     
 			#headcon1::before {
 			
@@ -2303,6 +2296,4 @@ button,
     @media screen and (max-width:500px){
       #headlogo1{height:45px;}
     }
-    .inner::-webkit-scrollbar{
-      width:0;
-    }
+  
