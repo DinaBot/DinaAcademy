@@ -1,8 +1,17 @@
+body{
+	background-color: white;
+	font-style: Helvetica;
+	transition: background-color 0.5s ease;
+}
 .container12 {
 	display: inline-block;
 	cursor: pointer;
   }
-  
+  #buttondl{
+	  position: fixed;
+	  width: 30px;
+	  height:30px;
+  }
   .bar1, .bar2, .bar3 {
 	width: 35px;
 	height: 5px;
@@ -114,14 +123,16 @@ ul{list-style-type:disc;}
 }
 .divexample{
 	position: relative;
-	background-color: lightgoldenrodyellow;
-	border: 1px solid red;
+	background-color: lightsalmon;
 	padding: 2%;
 	margin:1%;	
+	color:black;
 } 
+
 
 #topicdiv{
 	font-size:34px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; 
+	background-color: turquoise;
 }
 #youtubeframe{
 	position: absolute;
@@ -138,12 +149,14 @@ ul{list-style-type:disc;}
 	border-bottom: 1px solid gray;
 	font-size:34px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif;
 	margin-top:15px;
+	background-color: turquoise;
 }
 .topicdiv1{
 	padding:0px 0px 0px 10px;
 	border-bottom: 1px solid gray;
 	font-size:28px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif;
 	margin-top:15px;
+	background-color: turquoise;
 
 }
 #MainContent {
@@ -270,12 +283,14 @@ ul{list-style-type:disc;}
 @media screen and (max-width:700px){
 	#GreySpace{display:block;}
 	
-#topicdivm{
-	font-size:20px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; border-bottom: 0.5px solid lightgray; margin-bottom: 10px;
+.topicdivm{
+	font-size:20px; margin-bottom: 10px;
+	background-color: aqua;
 }
 }
-#topicdivm{
-	font-size:30px; font-family: OpenSans-Light, OpenSans, Arial, sans-serif; border-bottom: 0.5px solid lightgray; margin-bottom: 10px;
+.topicdivm{
+	font-size:30px; margin-bottom: 10px;
+	background-color: aqua;
 }
 #HeaderLogo{display:relative;
 	width:40%;
@@ -301,8 +316,7 @@ ul{list-style-type:disc;}
 	text-align:center;
 	margin:5%;
 	position:relative;
-	
-	font-family:'Roboto';
+
 }
 .BlackHR{
 	border:1px solid black;
@@ -383,6 +397,7 @@ body::-webkit-scrollbar{
     padding: 8px 24px 8px 18px;
 	position: relative;
 	background-color: #FFFF66;
+	color:#373A3C;
 }
 .LessonItem{
     width: 240px;
@@ -412,6 +427,9 @@ body::-webkit-scrollbar{
     color: #373A3C;
     font-size: 12px;
     font-family:'OpenSans',Arial,sans-serif;
+}
+.LessonItemText .CurrentLessonItem{
+	color: #373A3C;
 }
 .LessonItemSubText{
     margin:2px 0px 0px;
@@ -451,3 +469,12 @@ body::-webkit-scrollbar{
   ::-webkit-scrollbar-thumb:hover {
 	background: #555; 
   }
+  #buttondl{
+	  width: 225px;
+	  
+	  font-size: large;
+	  position: relative;
+	  background-color: #121212;
+	  color: white;
+  }
+  
