@@ -8,7 +8,7 @@
    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
    <title>Read: Greatest Term in Binomial Expansion</title>
    <link rel = "icon" href = "https://dinalearn.dinaacademy.org/LOGO.png" type = "image/x-icon"> 
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="keywords" content="Largest Term, Largest Term of binomial, Binomial Theorem, Binomial Theorem Proof, Binomial Theorem Practice, Dina, Dina Academy, Mathematics">
    <meta name="description" content="Learn how we can find the greatest term in a binomial expansion using algebraic inequalities. You Can Learn Anything! DinaAcademy">
@@ -18,7 +18,7 @@
  
  </head>
  <body onload="BodyLoadFunction()" onresize="Refresh()">
- 
+  
      <div id="TopHeader">
       <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick();">
         <div class="bar1"></div>
@@ -32,7 +32,9 @@
      <div id="Main">
      <div id="GreySpace" onclick="LeftMenuButtonClick()">Dina Academy</div>
      <div id="LeftDiv"> 
-      <b><p id="MiniContent" style=""><a href="">Advanced Algebra</a>  >  <a href="">Binomial Theorem</a>  >  <a href="">Greatest Term</a></p></b> 
+      <b><div id="MiniContent" style="">
+        <div id="buttondl" class="rounded-md" onclick="DarkMode()"><CENTER>DarkMode</CENTER></div>
+        <a href="">Advanced Algebra</a>  >  <a href="">Binomial Theorem</a>  >  <a href="">Greatest Term</a></div></b> 
       <hr id="BlackHR">
          <div id="LeftMenu">
           <div class="LessonHead" onclick="ToggleMenuShow(1)">
@@ -42,7 +44,7 @@
         <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/introduction.html"><div>
         <div class="LessonItem">
             <div class="LessonItemIconContainer">
-                <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+                <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
             </div>
             <div class="LessonItemTextContainer">
                 <div class="LessonItemText">
@@ -57,7 +59,7 @@
         <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/video-proofbinomialtheorem.html"><div>
           <div class="LessonItem">
               <div class="LessonItemIconContainer">
-                  <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
+                  <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
               </div>
               <div class="LessonItemTextContainer">
                   <div class="LessonItemText">
@@ -72,7 +74,7 @@
         <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/proofbinomialtheorem.html"><div>
             <div class="LessonItem">
                 <div class="LessonItemIconContainer">
-                    <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+                    <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
                 </div>
                 <div class="LessonItemTextContainer">
                     <div class="LessonItemText">
@@ -87,7 +89,7 @@
             <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/practice-binomial1.html"><div>
               <div class="LessonItem">
                   <div class="LessonItemIconContainer">
-                      <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/practicesvg.svg"></div>
+                      <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/practicesvg.svg"></div>
                   </div>
                   <div class="LessonItemTextContainer">
                       <div class="LessonItemText">
@@ -107,7 +109,7 @@
       <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/video-generalmiddleterm.html"><div>
           <div class="LessonItem">
               <div class="LessonItemIconContainer">
-                  <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
+                  <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
               </div>
               <div class="LessonItemTextContainer">
                   <div class="LessonItemText">
@@ -123,7 +125,7 @@
       <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/generalmiddleterm.html"><div>
       <div class="LessonItem">
           <div class="LessonItemIconContainer">
-              <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+              <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
           </div>
           <div class="LessonItemTextContainer">
               <div class="LessonItemText">
@@ -139,7 +141,7 @@
       <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/video-greatestterm.html"><div>
           <div class="LessonItem">
               <div class="LessonItemIconContainer">
-                  <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
+                  <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/playbuttonsvg.svg"></div>
               </div>
               <div class="LessonItemTextContainer">
                   <div class="LessonItemText">
@@ -154,7 +156,7 @@
       <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/greatestterm.html"><div>
           <div class="CurrentLessonItem">
               <div class="LessonItemIconContainer">
-                  <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
+                  <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/booksvg.svg"></div>
               </div>
               <div class="LessonItemTextContainer">
                   <div class="LessonItemText">
@@ -169,7 +171,7 @@
         <a href="https://www.dinaacademy.org/advanced-algebra/binomial-theorem/practice-binomial2.html"><div>
             <div class="LessonItem">
                 <div class="LessonItemIconContainer">
-                    <div class="LessonItemIcon"><img src="https://dinalearn.dinaacademy.org/practicesvg.svg"></div>
+                    <div class="LessonItemIcon"><img class="LessonIcon" src="https://dinalearn.dinaacademy.org/practicesvg.svg"></div>
                 </div>
                 <div class="LessonItemTextContainer">
                     <div class="LessonItemText">
@@ -185,13 +187,14 @@
          </div>
      </div>
      <div id="MainContent" onscroll="scrollMain()">
-      <div id="topicdivm">Greatest Term in Binomial Expansion</div>
+      
+      <div class="topicdivm rounded-lg px-8">Greatest Term in Binomial Expansion</div>
       <p>Sometimes, it is interesting to find the greatest term in a binomial expansion. Let us find the greatest coefficient in the binomial expansion, <span class="math inline">\((1+x)^n\)</span>, where <span class="math inline">\(n\)</span> is a positive integer. Now, <div class="overflowdiv"><span class="math display">\[\dfrac{\text{Coefficient of }(r+1)^{\text{th}}\text{ term}}{\text{Coefficient of }r^{\text{th}}\text{ term}}=\dfrac{\binom{n}{r}}{\binom{n}{r-1}}=\dfrac{\frac{n!}{r!(n-r)!}}{\frac{n!}{(r-1)!(n-r+1)!}}=\dfrac{n-r+1}{r}\]</span></div> So the coefficient of the <span class="math inline">\((r+1)^{\text{th}}\)</span> term will be greater or equal to than that of the <span class="math inline">\(r^{\text{th}}\)</span> term as long as <div class="overflowdiv"><span class="math inline">\[\dfrac{n-r+1}{r}\geq1\implies n-r+1\geq r \implies r\leq \dfrac{n+1}{2}\]</span></div>But <span class="math inline">\(r\)</span> must be an integer, and therefore<br><strong>When <span class="math inline">\(n\)</span> is even</strong>, the greatest binomial coefficient is given by the greatest value of <span class="math inline">\(r\)</span> i.e., <span class="math inline">\(r=n/2\)</span> and hence the greatest binomial coefficient is <span class="math inline">\(\binom{n}{n/2}\)</span> (Middle Term) <br><strong>When <span class="math inline">\(n\)</span> is odd</strong>, <span class="math inline">\(n+1\)</span> is divisible by 2. Thus, <span class="math inline">\(r=(n+1)/2\)</span> will give the greatest binomial coefficient <span class="math inline">\(\binom{n}{(n+1)/2}\)</span>. Also, note that <span class="math inline">\(\binom{n}{(n-1)2}=\binom{n}{n-(n+1)/2}\)</span>, both values of <span class="math inline">\(r\)</span>, <span class="math inline">\((n-1)/2\)</span> and <span class="math inline">\((n+1)/2\)</span> (Middle Terms) give us the greatest binomial coefficient.</p><br>
       <p>The greatest binomial coefficient in the expansion of <span class="math inline">\((1+x)^n\)</span> (where <span class="math inline">\(n\in\mathbb{N}\)</span>) occurs for the middle term.</p><br>
-      <div id="topicdivm">Extending \(\left|T_{r+1} \right|\geq\left| T_r \right|\)</div><br>
+      <div class="topicdivm rounded-lg px-8">Extending \(\left|T_{r+1} \right|\geq\left| T_r \right|\)</div><br>
       <p>Let us now extend our proposition to more general expansion <span class="math inline">\((a+x)^n\)</span>. To determine the numerically greatest term in expansion of <span class="math inline">\((a+x)^n\)</span>, where <span class="math inline">\(n\)</span> is a positive integer, consider <div class="overflowdiv"><span class="math inline">\[\left|{\dfrac{T_{r+1}}{T_r}}\right|=\left|{\dfrac{\binom{n}{r}a^{n-r}x^r}{\binom{n}{r-1}a^{n-r+1}x^{r-1}}}\right|=\left|{\dfrac{\binom{n}{r}}{\binom{n}{r-1}}}\right|\left|{\dfrac{x}{a}}\right|=\left|{\dfrac{n-r+1}{r}}\right|\left|{\dfrac{x}{a}}\right|\implies\left|{T_{r+1}}\right|\geq\left|{T_r}\right|\implies\left(\dfrac{n+1}{r}-1\right)\left|{\dfrac{x}{a}}\right|\geq1\]</span></div> <span class="math display">\[\left|{T_{r+1}}\right|\geq\left|{T_r}\right|\implies r\leq\dfrac{n+1}{1+\left|{\dfrac{a}{x}}\right|}\]</span></p>
       <p>Do not memorize this proposition. Just understand the fact that in order to find the greatest term, use <span class="math inline">\(\left|{\dfrac{T_{r+1}}{T_r}}\right|\geq1\)</span>.</p>
-      <div class="divexample">
+      <div class="divexample rounded-lg">
       <b><p>Given that the <span class="math inline">\(4^{\text{th}}\)</span> term in the expansion of <span class="math inline">\(\left(2+\dfrac{3}{8}x\right)^{10}\)</span> has the maximum numerical value, find the range of values of <span class="math inline">\(x\)</span> for which this will be true.</p></b><br>
       <p>Given <span class="math inline">\(4^{\text{th}}\)</span> term in <span class="math inline">\(\left(2+\dfrac{3}{8}x\right)^{10}=2^{10}\left(1+\dfrac{3}{16}x\right)^{10}\)</span>, is numerically greatest <span class="math inline">\(\left|{\dfrac{T_4}{T_3}}\right|\geq1\)</span> and <span class="math inline">\(\left|{\dfrac{T_5}{T_4}}\right|\leq1\implies\)</span><span class="math inline">\(\left|{\dfrac{\binom{10}{3}}{\binom{10}{2}}\cdot\dfrac{3}{16}x}\right|\geq1\)</span> and <span class="math inline">\(\left|{\dfrac{\binom{10}{4}}{\binom{10}{3}}\cdot\dfrac{3}{16}x}\right|\leq1\implies\)</span><span class="math inline">\(\left|{x}\right|\geq2\)</span> and <span class="math inline">\(\left|{x}\right|\leq\dfrac{64}{21}\implies\)</span> <span class="math inline">\(x\in\left[-\dfrac{64}{21},-2\right]\cup\left[2,\dfrac{64}{21}\right]\)</span></p></div>  
   </div>
@@ -297,5 +300,6 @@
     </div>
   </div>
 </footer>
+
  </body>
  </html>
