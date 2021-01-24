@@ -15,60 +15,7 @@
      <meta name="description" content="Enhance your understanding of the binomial theorem by practicing some questions related to the binomial theorem for positive index. You Can Learn Anything! DinaAcademy">
      <link rel="stylesheet" href="https://www.dinaacademy.org/dinastyle.css">
      <link rel="stylesheet" media="print" href="https://www.dinaacademy.org/dinaprintstyle.css">
-   <script>
-     function ToggleMenuShow(j){
-    var menuj = document.getElementById("Menu"+j);
-    if(menuj.style.display==="none"){
-        menuj.style.display="block";
-    }
-    else{
-        menuj.style.display="none";
-    }
-}
-   function BodyLoadFunction(){
-   if(window.innerWidth<700){LeftMenuButtonClick();}
-   document.getElementById("LeftMenuButton").style.transform='rotate(0deg)';
-   }
-   function LeftMenuButtonClick(){
-    var menudiv=document.getElementById("LeftDiv");
-    var maincontent=document.getElementById("MainContent");
-    if(window.innerWidth<700){
-    if(menudiv.style.display==="none"){
-       menudiv.style.display="block";
-       document.getElementById("GreySpace").style.display="block";
-      //  maincontent.style.display="none";
-       document.getElementById("LeftMenuButton").style.transform='rotate(0deg)';
-       
-    } else{
-       menudiv.style.display="none";
-       document.getElementById("GreySpace").style.display="none";
-       maincontent.style.display="block";
-       document.getElementById("LeftMenuButton").style.transform='rotate(0deg)';
-    }}
-    else{
-    if(menudiv.style.display==="none"){
-    menudiv.style.display="block";
-    document.getElementById("MainContentEnlarged").id="MainContent";
-    document.getElementById("youtubecontainerdiv").style.marginLeft="-7%";
-    document.getElementById("youtubecontainerdiv").style.marginTop="-3%";
-    document.getElementById("youtubecontainerdiv").style.width="114%";
-    document.getElementById("LeftMenuButton").style.border='1px solid black';
-    }
-    else{
-      menudiv.style.display="none";
-      maincontent.id="MainContentEnlarged";
-    document.getElementById("youtubecontainerdiv").style.marginLeft="-2%";
-    document.getElementById("youtubecontainerdiv").style.marginTop="-2%";
-    document.getElementById("youtubecontainerdiv").style.width="104%";
-    document.getElementById("LeftMenuButton").style.border='2px solid black';
-    }
-    }
-   }
-   
-   
-   function scrollMain(){
-   }
-   
+   <script src="https://dinalearn.dinaacademy.org/dinajs.js">
    </script>
    </head>
    
@@ -76,7 +23,7 @@
  <body onload="BodyLoadFunction()" onresize="Refresh()">
  
      <div id="TopHeader">
-      <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick();myFunction(this);">
+      <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick()">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
