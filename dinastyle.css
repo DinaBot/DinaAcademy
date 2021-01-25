@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body{
 	background-color: white;
-	font-style: Helvetica;
+	font-family: Lato;
 	transition: background-color 0.5s ease;
+}
+#MainContent{
+	color:#373A3C;
+	line-height:1.8;
 }
 .container12 {
 	display: inline-block;
@@ -127,6 +132,7 @@ ul{list-style-type:disc;}
 	padding: 2%;
 	margin:1%;	
 	color:black;
+	border-radius:5px;
 } 
 
 
@@ -142,7 +148,7 @@ ul{list-style-type:disc;}
 	padding: 3%;
     color: #373A3C;
     font-size: 15px;
-    font-family:'OpenSans',Arial,sans-serif;
+	font-family:Lato;
 }
 #topicdiv{
 	padding:0px 0px 0px 10px;
@@ -159,10 +165,11 @@ ul{list-style-type:disc;}
 	background-color: turquoise;
 
 }
+
 #MainContent {
 	
 	padding:2% 5% 4% 5%;
-	font-size: 17px;
+	font-size: 19px;
 	position: absolute;
 	left:245px;
 	top: 0px;
@@ -382,6 +389,7 @@ body::-webkit-scrollbar{
 @media screen and (max-width: 1110px){
 
 }
+
 .LessonHead{
     cursor: pointer;
     width: 240px;
@@ -389,7 +397,6 @@ body::-webkit-scrollbar{
     padding: 6px 24px;
     color:#000000DE;
     font-size: 14px;
-	font-family:OpenSans,Arial,sans-serif;
 	border-bottom: 0.5px solid grey;
 }
 .CurrentLessonItem{
@@ -426,7 +433,6 @@ body::-webkit-scrollbar{
 .LessonItemText{
     color: #373A3C;
     font-size: 12px;
-    font-family:'OpenSans',Arial,sans-serif;
 }
 .LessonItemText .CurrentLessonItem{
 	color: #373A3C;
@@ -435,7 +441,6 @@ body::-webkit-scrollbar{
     margin:2px 0px 0px;
     color: #6B6B6B;
     font-size: 12px;
-    font-family:'OpenSans',Arial,sans-serif;
 }
 .LessonProgress{
     width:50%;
@@ -477,4 +482,76 @@ body::-webkit-scrollbar{
 	  background-color: #121212;
 	  color: white;
   }
+  #loadanimation{
+  background-color:#white;
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:49;
+  }
+  #loada1{
+	  position:fixed;
+	  top:calc(50% - 37.5px);
+	  left:calc(50% - 37.5px);
+  border-radius:999999px;
+  z-index:52;
+  background-color:red;
+  height:75px;
+  width:75px;
+  animation:anload1 2s infinite;
   
+  }
+  #loada2{
+	  position:fixed;
+	  top:calc(50% - 48.75px);
+	  left:calc(50% - 48.75px);
+  border-radius:999999px;
+  z-index:51;
+  background-color:orange;
+  height:97.5px;
+  width:97.5px;
+  animation:anload2 2s infinite;
+  }
+  @keyframes anload1{
+  from {width:75px; height:75px;
+	  top:calc(50% - 37.5px);
+	  left:calc(50% - 37.5px);}
+  to {width:25px; height:25px;
+	  top:calc(50% - 12.5px);
+	  left:calc(50% - 12.5px);}
+ }
+ @keyframes anload2{
+  from {width:97.5px; height:97.5px;
+	  top:calc(50% - 48.75px);
+	  left:calc(50% - 48.75px);}
+  to {width:32.5px; height:32.5px;
+	  top:calc(50% - 16.25px);
+	  left:calc(50% - 16.25px);}
+ }
+ @keyframes anload3{
+  from {width:120px; height:120px;
+	  top:calc(50% - 60px);
+	  left:calc(50% - 60px);}
+  to {width:40px; height:40px;
+	  top:calc(50% - 20px);
+	  left:calc(50% - 20px);}
+ }
+  #loada3{
+	  position:fixed;
+	  top:calc(50% - 60px);
+	  left:calc(50% - 60px);
+  border-radius:999999px;
+  z-index:50;
+  background-color:yellow;
+  height:120px;
+  width:120px;
+  animation:anload3 2s infinite;
+  }
+  #blurdiv{
+	  z-index:40;
+	  background-color:#373A3C;
+	  opacity:70%;
+  position:fixed;
+  width:100%;
+  height:100%;
+  }
