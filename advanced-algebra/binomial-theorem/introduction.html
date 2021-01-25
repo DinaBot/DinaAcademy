@@ -21,8 +21,18 @@
    
    
  <body onload="BodyLoadFunction()" onresize="Refresh()">
- 
+     <div id="blurdiv"></div>
+		<div id="loadanimation">
+		<div id="loada1"></div>
+		<div id="loada2"></div>
+		<div id="loada3"></div>
+		</div>
      <div id="TopHeader">
+      <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
       <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick()">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -187,7 +197,6 @@
        </div>
        <div id="MainContent" onscroll="scrollMain()">
             <div class="topicdivm rounded-lg px-8" style="">Products of Binomials</div>
-       <br>
        When we expand  \((1+x)^2\), we get  \(1+2x+x^2\). If we simplify \((1+x)^3\), we would get \(1+3x+3x^2+x^3\). But what if we needed \((a+b)^{100}\) or \((a+b)^{3/5}\)? Situations like these occur very often in science where we need to simplify an expression raised to some power. To tackle with this problem, we first begin by finding powers of binomials like \((x+y)^{10}\) and then extending to expressions like \((a+b+c+2d)^{50}\). <br><br><div class="topicdivm  rounded-lg px-8">Getting some Ideas</div><br>
        It may be shown by multiplication that <div class="overflowdiv">\[(x+a)(x+b)(x+c)(x+d)=x^4+(a+b+c+d)x^3+(ab+ac+ad+bc+bd+cd)x^2\] \[+(abc+abd+acd+bcd)x+abcd\]</div> We can however, write down this result by inspection. <ul><p><li>The term <span class="math inline">\(x^4\)</span> is formed by taking the letter <span class="math inline">\(x\)</span> out of each of the factors.</li><li>The terms involving <span class="math inline">\(x^3\)</span> are formed by taking the letter <span class="math inline">\(x\)</span> out of any three factors, in every way possible, and one of the letters <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> out of the remaining factor.</li> <li>The terms involving <span class="math inline">\(x^2\)</span> are formed by taking the letter <span class="math inline">\(x\)</span> out of any two factors, in every way possible, and two of the letters <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> out of the remaining factors.</li> <li>The terms involving <span class="math inline">\(x\)</span> are formed by taking the letter <span class="math inline">\(x\)</span> out of any one factor, and three of the letters <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> out of the remaining factors.</li> <li>The term independent of <span class="math inline">\(x\)</span> is the product of all the letters <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span>.</p></li></ul> 
        <br><div class="topicdivm  rounded-lg px-8">Applying the Ideas</div><br>
@@ -200,8 +209,8 @@
         </ul>
         For example, multiplying \((x+1)\), \((x+2)\) and \((x+3)\) would get us <div class="overflowdiv">\[((x+1)(x+2)(x+3)=x^3+(1+2+3)x^2+(1\times2+1\times3+2\times3)x+(1\times2\times3)=x^3+6x^2+11x+6\]</div>
         <p>In <span class="math inline">\(\color{red}{S_1}\)</span> the number of terms is <span class="math inline">\(\color{red}{n}\)</span>; in <span class="math inline">\(\color{blue}{S_2}\)</span> the number of terms is the same as the number of combinations of <span class="math inline">\(n\)</span> thing taken <span class="math inline">\(2\)</span> at a time; that is, <span class="math inline">\(\color{blue}{^nC_2}\)</span>; in <span class="math inline">\(\color{brown}{S_3}\)</span> the number of terms is <span class="math inline">\(\color{brown}{^nC_3}\)</span>; and so on. Now suppose <span class="math inline">\(a_1=a_2=\dots=a_n=a\)</span>, then <span class="math inline">\(\color{red}{S_1}\)</span> becomes <span class="math inline">\(\color{red}{^nC_1 a}\)</span>;<span class="math inline">\(\color{blue}{S_2}\)</span> becomes <span class="math inline">\(\color{blue}{^nC_2 a^2}\)</span>;<span class="math inline">\(\dots\)</span>; <span class="math inline">\(\color{green}{S_r}\)</span> becomes <span class="math inline">\(\color{green}{^nC_r a^r}\)</span> and so on. We thus obtain <div class="overflowdiv">\[(x+a)^n=x^n+^nC_1ax^{n-1}+^nC_2a^2x^{n-2}+\dots+^nC_na^n\]</div> For example, <div class="overflowdiv">\[(x+y)^4=x^4+\dfrac{4!}{3!}x^3y+\dfrac{4!}{2!2!}x^2y^2+\dfrac{4!}{3!}xy^3+y^4=x^4+4x^3y+6x^2y^2+4xy^3+y^4\]</div></p>
-        <div class="theorem"><p>For <span class="math inline">\(n\in\mathbb{N}\)</span> <div class="overflowdiv">\[(x+a)^n=x^n+^nC_1ax^{n-1}+^nC_2a^2x^{n-2}+\dots+^nC_ra^rx^{n-r}+\dots+^nC_na^n\]</div> where <span class="math inline">\(^nC_i\)</span> denotes the number of possible selections of <span class="math inline">\(i\)</span> objects out of <span class="math inline">\(n\)</span> distinct objects.</p></div>
-<div class="theorem"><p>If <span class="math inline">\(m\in\mathbb{N}\)</span> the expansion of <span class="math inline">\((1+x)^m\)</span> is given by <div class="overflowdiv">\[(1+x)^m=1+mx+\dfrac{m(m-1)}{1\cdot2}x^2+\dfrac{m(m-1)(m-2)}{1\cdot2\cdot3}x^3+\dots+x^m\]</div></p></div>
+        <div class="theorem rounded-lg"><p>For <span class="math inline">\(n\in\mathbb{N}\)</span> <div class="overflowdiv">\[(x+a)^n=x^n+^nC_1ax^{n-1}+^nC_2a^2x^{n-2}+\dots+^nC_ra^rx^{n-r}+\dots+^nC_na^n\]</div> where <span class="math inline">\(^nC_i\)</span> denotes the number of possible selections of <span class="math inline">\(i\)</span> objects out of <span class="math inline">\(n\)</span> distinct objects.</p></div>
+<div class="theorem rounded-lg"><p>If <span class="math inline">\(m\in\mathbb{N}\)</span> the expansion of <span class="math inline">\((1+x)^m\)</span> is given by <div class="overflowdiv">\[(1+x)^m=1+mx+\dfrac{m(m-1)}{1\cdot2}x^2+\dfrac{m(m-1)(m-2)}{1\cdot2\cdot3}x^3+\dots+x^m\]</div></p></div>
 Let's try a simple problem
 <div class="divexample"><p><strong>Write the first four terms of <span class="math inline">\(\left(1-\dfrac{2y^2}{3}\right)^6\)</span></strong></p>
 <p><strong>Answer: </strong><div class="overflowdiv"><span class="math inline">\(^6C_0\)</span>, <span class="math inline">\(^6C_1\left(\dfrac{-2y^2}{3}\right)\)</span>, <span class="math inline">\(^6C_2\left(\dfrac{-2y^2}{3}\right)^2\)</span>, <span class="math inline">\(^6C_3\left(\dfrac{-2y^2}{3}\right)^3,\)</span> i.e., <span class="math inline">\(1\)</span>, <span class="math inline">\(\dfrac{-12y^2}{3}\)</span>, <span class="math inline">\(\dfrac{60y^4}{9}\)</span>, <span class="math inline">\(\dfrac{-160y^6}{27}\)</span></p></div></div>
@@ -209,7 +218,7 @@ Let's try a simple problem
    </div>
    </div>
    <script>
-     window.onresize=reload();
+     window.onresize=refresh();
   </script>
    <footer class="text-gray-700 body-font" id="Footer">
      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
