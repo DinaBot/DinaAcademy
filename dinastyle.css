@@ -121,8 +121,8 @@ body{
 }
 ul{list-style-type:disc;}
 .theorem{
-	background-color: rgb(27, 30, 31)226, 235);
-	border: 1px solid darkblue;
+	background-color: #F2AA4CFF;
+	
 	padding: 2%;
 	margin:1%;
 }
