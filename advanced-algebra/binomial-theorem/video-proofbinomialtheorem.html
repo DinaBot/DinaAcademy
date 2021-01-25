@@ -8,8 +8,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Video: Proving Binomial Theorem by Mathematical Induction</title>
    <link rel = "icon" href = "https://dinalearn.dinaacademy.org/LOGO.png" type = "image/x-icon"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com">
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="keywords" content="Mathematical Induction, Proof, Binomial Theorem, Binomial Theorem Proof, Dina, Dina Academy, Mathematics">
    <meta name="description" content="VIDEO - Learn how to prove the theorem using mathematical induction. You Can Learn Anything! DinaAcademy">
@@ -20,21 +19,30 @@
  </script>
  </head>
  
- 
- <body onload="BodyLoadFunction()" onresize="Refresh()">
- 
+  <body onload="BodyLoadFunction()" onresize="Refresh()">
+  
+     <div id="blurdiv"></div>
+		<div id="loadanimation">
+		<div id="loada1"></div>
+		<div id="loada2"></div>
+		<div id="loada3"></div>
+		</div>
      <div id="TopHeader">
-      <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick()">
+      <div class="container12" id="LeftMenuButton" onclick="LeftMenuButtonClick();">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-      </div>        <a href="https://www.dinaacademy.org"><img id="TopHeaderSVG" src="https://dinalearn.dinaacademy.org/DinaAcademySVG.svg"></a>
-         <div id="RightButtons"><a href="https://drive.google.com/u/1/uc?id=1It3Ner_cUR4B2StJ723mP41w2TyEbVwk&export=download"><img id="DownloadButton" src="https://dinalearn.dinaacademy.org/downloadsvg.svg"></a></div>
+      </div>
+         <a href="https://www.dinaacademy.org"><img id="TopHeaderSVG" src="https://dinalearn.dinaacademy.org/DinaAcademySVG.svg"></a>
+         <div id="RightButtons"><a href="https://drive.google.com/u/1/uc?id=1YinKq2UBEAHJ8v-nmw9KlyjpCj6_CK5x&export=download"><img id="DownloadButton" src="https://dinalearn.dinaacademy.org/downloadsvg.svg"></a></div>
      </div>
+     <script></script>
      <div id="Main">
      <div id="GreySpace" onclick="LeftMenuButtonClick()">Dina Academy</div>
      <div id="LeftDiv"> 
-      <b><p id="MiniContent" style=""><a href="">Advanced Algebra</a>  >  <a href="">Binomial Theorem</a>  >  <a href="">Video - Binomial Theorem Proof (Mathematical Induction)</a></p></b> 
+      <b><div id="MiniContent" style="">
+        <div id="buttondl" class="rounded-md" onclick="DarkMode()"><CENTER>DarkMode</CENTER></div>
+        <a href="">Advanced Algebra</a>  >  <a href="">Binomial Theorem</a>  >  <a href="">Video - Binomial Theorem Proof (Mathematical Induction)</a></div></b> 
       <hr id="BlackHR">
          <div id="LeftMenu">
           <div class="LessonHead" onclick="ToggleMenuShow(1)">
